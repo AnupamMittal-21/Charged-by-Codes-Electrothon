@@ -205,17 +205,16 @@ body {
     padding-left: 20px;
 }
 
-
-/* .container {
+.container {
     max-width: 1170px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-} */
+}
 
 ul {
     list-style: none;

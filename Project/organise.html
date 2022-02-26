@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organise</title>
+    <link rel="stylesheet" href="css/organise.css">
+</head>
+<body>
+    <header>
+    <h1 class="main_heading">
+       EVENT DETAILS
+    </h1>
+    </header>
+    <container>
+    <p>
+        fields marked with * are mandatory
+    </p>
+    <p>
+        Name of event *: <input type="text" name="Name of event" >    </p>
+    <p>Event type *:
+        <select name="Event_type" id="Event_type">
+            <option value="">---Select the type of event---</option>
+            <option value="dance">Dance</option>
+            <option value="music">Music</option>
+            <option value="coding">Coding</option>
+            <option value="sport">Sport</option>
+            <option value="debate">Debate</option>
+            <option value="other">Other</option>
+        </select>
+    </p>
+    <p>
+        About Event *:<textarea name="about event" id="about event" cols="80" rows="8">
+        </textarea>
+    </p>
+    <p>
+        Eligible Candidates *:<select name="eligible" id="eligible">
+            <option value="">---Select---</option>
+            <option value="first year">first year</option>
+            <option value="second year">second year</option>
+            <option value="third year">third year</option>
+            <option value="final year">final year</option>
+            <option value="all">all</option>
+        </select>   
+     </p>
+     <p>
+        Last date to register *: <input type="date" name="last" id="last">
+     </p>
+    </container>
+     <button class="button" onclick="submit">Submit</button>
+</body>
+</html>
