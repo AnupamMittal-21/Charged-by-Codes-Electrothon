@@ -1,5 +1,4 @@
 * {
-    padding: 0;margin: 0;
     box-sizing: border-box;
     list-style: none;
 }
@@ -35,14 +34,10 @@ header h1{
     padding: 12px 20px;
     border-radius: 4px;
     cursor: pointer;
-    width: 10vw;
-    border: 1px #6900d1;
+    width: 100%;
 }
 .button:hover{
-    border: 1px #6900d1;
-    
-    background-color:white;
-    color: #6900d1;
+    background-color:black;
 }
 .main_heading{
     text-align: center;

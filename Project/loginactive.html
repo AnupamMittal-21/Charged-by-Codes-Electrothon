@@ -1,134 +1,59 @@
-<!DOCTYPE html>
+<html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Login / Sign Up Form</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/cssFile.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/login_style.css"> -->
+    <link rel="database" href="login_3.js">
 </head>
 
 <body>
 
 
-    <section class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="Images/logo.jpeg"></a>
+    <div id="login-box">
+        <div class="left">
+            <h1 id='status'>Login</h1>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
+            <input type="text" id="email" name="email" placeholder="E-mail" />
+            <input type="password" id="password" name="password" placeholder="Password" />
 
+            <input type="submit" id='login' name="login" value="login" />
+            
+            <a href="signup_2.html"><input   type="submit" id='sighUp' name="sighUp" value="Sign Up"/></a>
 
-                    </button>
-                    <div img src="Images/menu-button-of-three-horizontal-lines.png" class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto text-right">
-                            <li class="nav-item ">
-                                <a class="nav-link active-home" aria-current="page" href="/index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/organize.html">ORGANISE AN EVENT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">SPONSOR AN EVENT </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="/loginactive.html">LOGIN/SIGN UP</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
         </div>
-    </section>
 
-
-    <div class="container3">
-        <form class="form" id="login">
-            <h1 class="form__title">Login</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Username or email">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Continue</button>
-            <p class="form__text">
-                <a href="#" class="form__link">Forgot your password?</a>
-            </p>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
-            </p>
-        </form>
-        <form class="form form--hidden" id="createAccount">
-            <h1 class="form__title">Create Account</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email Address">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Confirm password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Continue</button>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
-            </p>
-        </form>
-    </div>
-    <script src="css/main.js"></script>
-    <footer class="footer">
-        <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-                <li><a href="about.html" target="_blank">about us</a></li>
-                <li><a href="services.html">our services</a></li>
-                <li><a href="privacypolicy.html" target="_blank">privacy policy</a></li>
-                <li><a href="favouritesponsor.html" target="_blank">our favourite sponsors</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>get help</h4>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>contact us</h4>
-            <ul>
-                <li><a href="#">organisers</a></li>
-                <li><a href="#">reception</a></li>
-                <li><a href="#">college representative</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="20px" alt="fb logo"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" height="20px" alt="twitter logo"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" height="20px" alt="instagram logo"> </i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" height="20px" alt="linkedin logo"></a>
-
-            </div>
-        </div>
-    </footer>
 
 </body>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"; import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"; import {
+        getAuth, createUserWithEmailAndPassword,
+        signInWithEmailAndPassword, onAuthStateChanged, signOut
+    } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js"; const firebaseConfig = {
+        apiKey: "AIzaSyDlzTIWRIKsB4eo0QDejCHPHSOtan7jpO0", authDomain: "form-34f99.firebaseapp.com", projectId:
+            "form-34f99", storageBucket: "form-34f99.appspot.com", messagingSenderId: "723148530128", appId: "1:723148530128:web:29f051dcb71b25edffd9d5"
+    }; const app = initializeApp(firebaseConfig); const database = getDatabase(app); const auth = getAuth(); sighUp.addEventListener('click',
+        (e) => {
+            var email = document.getElementById('email').value; var password = document.getElementById('password').value; var username = document.getElementById('username').value; createUserWithEmailAndPassword(auth, email, password).then((userCredential)
+                => { const user = userCredential.user; set(ref(database, 'users/' + user.uid), { username: username, email: email }) alert('user created!'); }).catch((error) => {
+                    const errorCode = error.code; const errorMessage = error.message; alert(errorMessage);
+                });
+        }); login.addEventListener('click', (e) => {
+            var email = document.getElementById('email').value; var password = document.getElementById('password').value; signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+                const user
+                    = userCredential.user; const dt = new Date(); update(ref(database, 'users/' + user.uid), { last_login: dt, }) &alert('User loged in!');
+            }).catch((error) => { const errorCode = error.code; const errorMessage = error.message; alert(errorMessage); });
+        }); const user = auth.currentUser; onAuthStateChanged(auth, (user) => { if (user) { const uid = user.uid; } else { } }); logout.addEventListener('click', (e) => {
+            signOut(auth).then(() => { alert('user loged out'); }).catch((error) => {
+                const errorCode
+                    = error.code; const errorMessage = error.message; alert(errorMessage);
+            });
+        });
+
+</script>
+
+</html>
